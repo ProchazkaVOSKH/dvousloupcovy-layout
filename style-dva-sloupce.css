@@ -1,0 +1,26 @@
+/* GLOBÁLNÍ NASTAVENÍ PRO CELOU STRÁNKU ---------------------------------------------- */
+body {
+font-family: Arial, Helvetica, sans-serif;      /* nastavení bezpatkového fontu */
+padding-top: 10px;                              /* vnitřní vzdálenost od horního kraje stránky */
+}
+
+/* NASTAVENÍ HLAVNÍHO KONTEJNERU (FLEXBOX) ------------------------------------------- */
+.container {
+display: flex;                                 /* nastavení vnějšího kontejneru jako FlexBox */
+gap: 20px;                                     /* mezera mezi prvky uvnitř kontejneru */
+}
+
+/* NASTAVENÍ KONTEJNERU PRO HLAVNÍ OBSAH --------------------------------------------- */
+main {
+flex-grow: 3;                                 /* prvek zabere 3x více místa než ostatní */
+background: lightblue;                        /* barva pozadí hlavního obsahu */
+padding: 10px;                                /* vnitřní odsazení obsahu */
+}
+
+/* NASTAVENÍ KONTEJNERU PRO POSTRANNÍ PANEL ------------------------------------------ */
+aside {
+flex-basis: 200px;                            /* výchozí šířka prvku před aplikací flex pravidel */
+flex-shrink: 0;                               /* zabraňuje zmenšení prvku pod hodnotu `flex-basis` */
+background: lightgray;                        /* barva pozadí postranního panelu */
+padding: 10px;                                /* vnitřní odsazení obsahu */
+}
