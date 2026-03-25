@@ -12,7 +12,7 @@ gap: 20px;                                     /* mezera mezi prvky uvnitř kont
 
 /* NASTAVENÍ KONTEJNERU PRO HLAVNÍ OBSAH --------------------------------------------- */
 main {
-flex-grow: 3;                                 /* prvek zabere 3x více místa než ostatní */
+flex-grow: 1;                                 /* prvek zabere volné místo dle šířky okna (200px mu nedovolí prvek aside) */
 background: lightblue;                        /* barva pozadí hlavního obsahu */
 padding: 10px;                                /* vnitřní odsazení obsahu */
 }
